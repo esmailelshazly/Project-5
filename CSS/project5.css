@@ -217,7 +217,7 @@ body:hover .header span {
 /* End Header */
 /* Start Landing */
 .landing {
-  background-image: url(/Project5/imgs/landing.jpg);
+  background-image: url(../imgs/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
