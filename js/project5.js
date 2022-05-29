@@ -1,10 +1,10 @@
 let button = document.querySelector(".button-two");
-let btn = document.querySelector(".btn");
+let btn = document.querySelector(".btn-two");
 window.onscroll = function () {
   if (window.scrollY >= 600) {
-    button.classList.add("btn");
+    button.classList.add("btn-two");
   } else {
-    button.classList.remove("btn");
+    button.classList.remove("btn-two");
   }
 };
 button.onclick = function () {
