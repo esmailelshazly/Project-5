@@ -1,4 +1,4 @@
-let button = document.querySelector(".button");
+let button = document.querySelector(".button-two");
 let btn = document.querySelector(".btn");
 window.onscroll = function () {
   if (window.scrollY >= 600) {
