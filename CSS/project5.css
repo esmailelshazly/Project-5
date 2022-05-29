@@ -204,9 +204,6 @@ body:hover .header span {
   color: white;
   transition: 0.5s;
 }
-.header ul li a:hover {
-  color: #c51a3c
-}
 .header .menu-icon:hover + ul {
   transform: translateX(0)
 }
