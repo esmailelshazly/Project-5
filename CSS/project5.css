@@ -167,12 +167,6 @@ a {
 }
 /* End Global Rules */
 /* Start Header */
-/* body:hover .header { */
-/*   background-color: var(--main-color); */
-/* } */
-body:hover .header span {
-  color: #fff
-}
 .header {
   padding-top: 15px;
   padding-bottom: 15px;
