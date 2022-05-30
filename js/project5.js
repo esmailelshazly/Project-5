@@ -1,22 +1,27 @@
 let button = document.querySelector(".button-two");
 let btn = document.querySelector(".btn-two");
 let header = document.querySelector(".header");
-window.onscroll = function () {
+let headerSpan = document.querySelector(".header span");
+window.addEventListener("scroll", function() {
   if (window.scrollY >= 600) {
     button.classList.add("btn-two");
-    if (window.scrollY >= 200) {
-      header.style.backGround = "crimson"
-    } else {
-      header.style.backGround = "none"
-    }
   } else {
     button.classList.remove("btn-two");
   }
-};
-button.onclick = function () {
+});
+window.addEventListener("scroll", function() {
+  if (window.scrollY >= 100) {
+    header.style.backgroundColor = "crimson";
+    headerSpan.style.color = "white"
+  } else {
+    header.style.backgroundColor = "transparent";
+    headerSpan.style.color = "crimson";
+  }
+});
+button.onclick = function() {
   window.scrollTo({
     left: 0,
     top: 0,
     behavior: "smooth"
-  })
+  });
 };
