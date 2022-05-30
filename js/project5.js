@@ -30,7 +30,7 @@ button.onclick = function() {
   });
 };
 menu.onclick = function () {
-  menuUl.classList.add("show");
+  menuUl.classList.toggle("show");
 };
 menuMove.forEach(function (ele) {
   ele.onclick = function() {
