@@ -20,37 +20,22 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 .button-two {
-
   padding: 9px 8px;
-
   color: white;
-
   background-color: crimson;
-
   border-radius: 6px;
-
   border: none;
-
   font-weight: bold;
-
   position: fixed;
-
   right: 20px;
-
   bottom: 20px;
-
   font-size: 16px;
-
   transition: 0.2s;
-
   opacity: 0
-
 }
 
 .btn-two {
-
   opacity: 1
-
 }
 .button-two::before {
   content: "";
@@ -200,6 +185,10 @@ a {
   transition: 0.5s;
 }
 @media (max-width: 767px) {
+  .header.padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .header .logo {
     font-size: 25px
   }
@@ -231,7 +220,8 @@ a {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-end;
-    z-index: 100
+    z-index: 100;
+    cursor: pointer;
   }
   
   .header .menu-icon span {
@@ -241,15 +231,15 @@ a {
     width: 100%;
     transition: 0.5s
   }
-  .header .menu-icon:hover span:first-child {
+  .header .menu-icon .span-one.one {
     background-color: red;
     transform: translateY(15px) rotate(45deg)
   }
-  .header .menu-icon:hover span:last-child {
+  .header .menu-icon .span-two.two {
     background-color: red;
     transform: rotate(-45deg)
   }
-  .header .menu-icon:hover span:nth-child(2) {
+  .header .menu-icon .span-three.three {
     opacity: 0;
     display: none
   }
@@ -257,7 +247,7 @@ a {
 /* End Header */
 /* Start Landing */
 .landing {
-  background-image: url(../imgs/landing.jpg);
+  background-image: url(/project2/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
