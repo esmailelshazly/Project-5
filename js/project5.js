@@ -17,9 +17,11 @@ window.addEventListener("scroll", function() {
   if (window.scrollY >= 100) {
     header.style.backgroundColor = "crimson";
     headerSpan.style.color = "white";
+    header.classList.add("padding");
   } else {
     header.style.backgroundColor = "transparent";
     headerSpan.style.color = "crimson";
+    header.classList.remove("padding");
   }
 });
 button.onclick = function() {
@@ -29,11 +31,34 @@ button.onclick = function() {
     behavior: "smooth"
   });
 };
-menu.onclick = function () {
+menu.addEventListener("click", function() {
   menuUl.classList.toggle("show");
-};
-menuMove.forEach(function (ele) {
+})
+menuMove.forEach(function(ele) {
   ele.onclick = function() {
     menuUl.classList.remove("show");
+    spanOne.classList.remove("one");
+    spanTwo.classList.remove("two");
+    spanThree.classList.remove("three");
   };
+});
+let spanOne = document.querySelector(".span-one");
+let spanTwo = document.querySelector(".span-two");
+let spanThree = document.querySelector(".span-three");
+menu.addEventListener("click", function() {
+  spanOne.classList.toggle("one");
+  spanTwo.classList.toggle("two");
+  spanThree.classList.toggle("three");
+})
+var typed = new Typed(".typing", {
+  strings: ["Front-end Developer", "YouTuber", "Designer", "Freelancer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
+});
+var typed = new Typed(".typing-two", {
+  strings: ["Front-end Developing", "Designing"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
 });
