@@ -247,7 +247,7 @@ a {
 /* End Header */
 /* Start Landing */
 .landing {
-  background-image: url(..imgs/landing.jpg);
+  background-image: url(../imgs/landing.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
